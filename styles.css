@@ -1,62 +1,92 @@
-body{
-    background-color: beige;
+:root {
+    --cor-1: #20B6E0;
+    --cor-2: #1A9ABD;
+    --cor-3: #157894;
+    --cor-4: #0F576B;
+    --cor-5: #093642;
+}
+
+body {
+    background: radial-gradient(circle, var(--cor-1), var(--cor-2), var(--cor-3));
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 125px;
 }
-img{
+
+.foto-perfil {
     width: 100px;
-  height: 100px;
-  object-fit: cover;
-  object-position: center 100%;
-  border-radius: 50%;
-  border: 2px solid black;
+    height: 100px;
+    object-fit: cover;
+    object-position: center 100%;
+    border-radius: 50%;
+    border: 2px solid black;
 }
-.nomepg{
+
+.nomepg {
     margin-bottom: -2px;
 }
 
-.botao{
+.botao {
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     padding: 20px;
-
+    
 }
 
-.botao-clique{
-    background-color: bisque;
+.botao-clique {
+    background-color: var(--cor-2);
     border: 2px solid black;
     width: 600px;
     height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    align-items: center; 
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0.5px 3px 2px rgb(0, 0, 0);
+    padding: 0 15px; 
+    
 }
-a{
+
+.botao-clique a {
     color: black;
     text-decoration: none;
-}
-
-.botao-clique:hover{
-    background-color: rgb(255, 215, 165);
-}
-
-footer {
+    flex-grow: 1;
     text-align: center;
-    padding: 3px;
-    color: #555;
-    margin-top: -10px;
-  }
+}
+
+.botao-clique:hover a {
+    color: #e9e9e9;
+}
+.img-botao {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+    transition: #e9e9e9 0.3s ease;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-left: -30px;
+}
+
+.botao-clique:hover {
+    background-color: var(--cor-4);
+    width: 620px;
+    height: 55px;
+    transition: ease, 0.3s;
+
+}
